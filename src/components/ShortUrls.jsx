@@ -41,11 +41,11 @@ function ShortUrls({ storedUrls, setStoredUrls }) {
 
           return (
             <li
-              className="w-full bg-white rounded-lg text-base font-bold md:flex md:items-center md:p-5 md:text-lg"
+              className="w-full bg-white rounded-lg text-base font-bold md:flex md:items-center md:p-5 md:text-lg md:space-x-4"
               key={index}
             >
               {/*** Long Url */}
-              <p className="w-full p-4 border-b-[1px] border-gray break-words md:border-b-0 md:p-0">
+              <p className="w-full p-4 border-b-[1px] border-gray break-words md:border-b-0 md:p-0 overflow-hidden line-clamp-1 text-ellipsis">
                 {storedurl.longUrl}
               </p>
 
